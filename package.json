@@ -1,0 +1,25 @@
+{
+  "name": "modern-js-quiz-mmeadow3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-day-cohort-14/modern-js-quiz-mmeadow3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-day-cohort-14/modern-js-quiz-mmeadow3/issues"
+  },
+  "homepage": "https://github.com/nss-day-cohort-14/modern-js-quiz-mmeadow3#readme",
+  "dependencies": {
+    "gulp-jasmine": "^2.4.0",
+    "jasmine": "^2.4.1",
+    "jasmine-spec-reporter": "^2.5.0",
+    "jshint": "^2.9.2"
+  }
+}
