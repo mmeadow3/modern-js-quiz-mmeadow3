@@ -5,9 +5,8 @@ let Type = require('./types');
 let Name = require('./names');
 
 
-let selected = "";
-let player1 = "";
-let player2 = "";
+let selected = {};
+
 
 $(document).ready(function() {
 /////////////////gets value from text input box//////////
@@ -46,10 +45,16 @@ $('#player1Select > li').click(function(){
         break;
 	}
 if (selected) {
-	let player1 = selected;
-	$('#p1Output').append(player1.name);
+	let robot1 = selected;
+	console.log(robot1);
+	$('#p1Output').append(robot1.name + " variant of " + robot1.type);
 	$('#player1Select > li').find("button[type='button']").prop('disabled',true)
-	};
+
+	$('#create1').one('click', function(){
+	let player1 = selected;
+	$('#battleArena').append(`<div id="introText1"> Here is Player 1's ${robot1.name}</div>`)
+    })
+  };
 });
 
 
@@ -77,21 +82,27 @@ $('#player2Select > li').click(function(){
         break;
 	}
 if (selected) {
-	let player2 = selected;
-	$('#p2Output').append(player2.name);
+	let robot2 = selected;
+	console.log(robot2);
+	$('#p2Output').append(robot2.name + " variant of " + robot2.type);
 	$('#player2Select > li').find("button[type='button']").prop('disabled',true)
-	};
+
+	$('#create2').one('click',function(){
+	let player2 = selected;
+	$('#battleArena').append(`<div id="introText2"> Here is Player 2's ${robot2.name}</div>`)
+    });
+  };
 });
+
+
+
 //////////////////attack button/////////////////////
-// $('#attackBtn').click(function(){
-// 		}
-// });
-
-
-
-
-
+$('#attackBtn').click(function(){
+	
+});
 
 
 
 });
+
+module.exports = selected;
