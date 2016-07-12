@@ -38,7 +38,7 @@ describe("robot specs", function (){
 	it('Each should have defined health and damage', function(){
 		expect(testRobot.health).toBeDefined();
 		expect(testRobot.damage).toBeDefined();
-	})
+	});
 
 
 });
