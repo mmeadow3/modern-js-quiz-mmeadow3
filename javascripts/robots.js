@@ -1,17 +1,16 @@
 "use strict";
 
-let Robots = function(){
-	this.name = "mike";
+
+
+let Robot = function(){
+	this.health = 0;
+	this.weapons = null;
+	this.armor = null;
+	this.name = "";
+	this.damage = 0;
+
 };
 
 
 
-
-
-
-
-
-
-
-
-module.exports = Robots;
+module.exports = Robot;

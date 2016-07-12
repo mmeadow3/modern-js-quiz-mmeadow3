@@ -31,12 +31,13 @@ let handleError = function(task) {
   Delete or comment out if you are not using Browserify
  */
 
-let customOpts = {
-  entries: ['./javascripts/apps.js'],
-  debug: true
+
+var customOpts = {
+  entries: ['./javascripts/app.js'], 
+  debug: true //creates readable 'source maps' of code
 };
-let opts = Object.assign({}, watchify.args, customOpts);
-let bundler = watchify(browserify(opts)); 
+var opts = Object.assign({}, watchify.args, customOpts);
+var bundler = watchify(browserify(opts));
 bundler.on('update', bundle); // on any dep update, runs the bundler
 bundler.on('log', gutil.log); // output build logs to terminal
 
@@ -67,32 +68,6 @@ gulp.task('lint', function() {
     .on('error', function() { });
 });
 
-
-/*
-  SASS SECTION
-  Delete or comment out if you are not using SASS
- */
-// gulp.task('sass', function() {
-//   return gulp.src('./src/sass/*.scss')
-//     // sourcemaps + sass + error handling
-//     .pipe(sourcemaps.init())
-//     .pipe(sass({
-//       sourceComments: true,
-//       outputStyle: 'compressed'  // nested || compressed
-//     }))
-//     .on('error', handleError('SASS'))
-//     // generate .maps
-//     .pipe(sourcemaps.write({
-//       'includeContent': false,
-//       'sourceRoot': '.'
-//     }))
-//     .pipe(sourcemaps.write({
-//       'includeContent': true
-//     }))
-//     // write sourcemaps to a specific directory
-//     // give it a file and save
-//     .pipe(gulp.dest('./dist/css'));
-// });
 
 /*
   JASMINE SECTION
