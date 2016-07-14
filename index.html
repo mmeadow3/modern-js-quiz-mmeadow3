@@ -4,10 +4,48 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>MJD quiz</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Robots</h1>
+<div id="header">
+<h1>Welcome to BattleBots!</h1>
+<h5>Please enter 2 names and hit Submit</h5>
+<h5>Then select your robot</h5>
+<h5>Click Create to make your bot</h5>
+<h5>Press attack to defeat you enemy!</h5><br>
+</div>
+<div id="players">
+	<div id="player1">Player 1: <input type="text" id="p1Input" name="Player1"><button type="button" id="p1Select">Submit</button><br></div>
+	VS:
+	<div id="player2">Player 2: <input type="text" id="p2Input" name="Player2"><button type="button" id="p2Select">Submit</button><br></div>
+</div>
+<div>
+<ul id="player1Select"> Player 1, Select your robot:
+	<li><button type="button" value="a" id="terminatorBtn">Terminator</button></li>
+	<li><button type="button" id="zippoBtn">Zippo</button></li>
+	<li><button type="button" id="panzerBtn">Panzer</button></li>
+	<li><button type="button" id="shermanBtn">Sherman</button></li>
+	<li><button type="button" id="stingerBtn">Stinger</button></li>
+	<li><button type="button" id="hornetBtn">Hornet</button></li>
+	<div id="p1Output"></div>
+	<button id='create1' type="button">Create Your Bot</button>
+</ul>
+<ul id="player2Select"> Player 2, Select your robot:
+	<li><button type="button" id="terminatorBtn">Terminator</button></li>
+	<li><button type="button" id="zippoBtn">Zippo</button></li>
+	<li><button type="button" id="panzerBtn">Panzer</button></li>
+	<li><button type="button" id="shermanBtn">Sherman</button></li>
+	<li><button type="button" id="stingerBtn">Stinger</button></li>
+	<li><button type="button" id="hornetBtn">Hornet</button></li>
+	<div id="p2Output"></div>
+	<button id='create2' type="button">Create Your Bot</button>
+</ul>
+</div>
+<div id="buttonDiv">
+<div id="battleArena">	</div>
+	<h1>Defeat Your Enemy!</h1>
+	<button type="button" id="attackBtn">Attack!</button>
+</div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="dist/bundle.js"></script>
 </body>
