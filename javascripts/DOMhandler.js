@@ -9,8 +9,6 @@ let selected = {Robot, Type, Name};
 var players = [];
 var users = [];
 
-
-// $(document).ready(function() {
 /////////////////gets value from text input box//////////
 $('#p1Select').click(function(){
 	var p1 = $('#p1Input').val();
@@ -50,7 +48,6 @@ $('#player1Select > li').click(function(){
 	}
 if (selected) {
 	let robot1 = selected;
-	console.log(robot1);
 	players.push(robot1);
 	$('#p1Output').append(robot1.name + " variant of " + robot1.type);
 	$('#player1Select > li').find("button[type='button']").prop('disabled',true);
@@ -87,14 +84,12 @@ $('#player2Select > li').click(function(){
 	}
 if (selected) {
 	let robot2 = selected;
-	console.log(robot2);
 	players.push(robot2);
 	$('#p2Output').append(robot2.name + " variant of " + robot2.type);
 	$('#player2Select > li').find("button[type='button']").prop('disabled',true);
 	$('#create2').one('click',function(){
 	let player2 = selected;
 	$('#battleArena').append(`<div id="introText2"> Here is Player 2's ${robot2.name}<br>Your health is ${robot2.health}</div>`);
-	console.log(players);
     });
   }
 });
@@ -125,6 +120,5 @@ $('#attackBtn').click(function(){
 		
 });
 
-// players[0].health = (players[0].health-players[1].damage);
 
 module.exports = players;
