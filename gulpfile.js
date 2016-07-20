@@ -33,7 +33,7 @@ let handleError = function(task) {
 
 
 var customOpts = {
-  entries: ['./javascripts/app.js'], 
+  entries: ['./javascripts/app.js'],
   debug: true //creates readable 'source maps' of code
 };
 var opts = Object.assign({}, watchify.args, customOpts);

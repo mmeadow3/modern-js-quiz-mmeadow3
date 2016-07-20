@@ -10,11 +10,11 @@ let Robot = function(){
 };
 
 
-Robot.prototype.generateHealth = function (minHealth, maxHealth){
+Robot.prototype.generateHealth = (minHealth, maxHealth) => {
 return Math.floor(Math.random() * ((maxHealth - minHealth)) + minHealth);
 };
 
-Robot.prototype.generateDamage = function (minDamage, maxDamage){
+Robot.prototype.generateDamage = (minDamage, maxDamage) => {
 return Math.floor(Math.random() * ((maxDamage - minDamage)) + minDamage);
 };
 

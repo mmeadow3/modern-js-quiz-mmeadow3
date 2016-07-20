@@ -20,27 +20,36 @@
 	<div id="player2">Player 2: <input type="text" id="p2Input" name="Player2"><button type="button" id="p2Select">Submit</button><br></div>
 </div>
 <div>
-<ul id="player1Select"> Player 1, Select your robot:
-	<li><button type="button" value="a" id="terminatorBtn">Terminator</button></li>
-	<li><button type="button" id="zippoBtn">Zippo</button></li>
-	<li><button type="button" id="panzerBtn">Panzer</button></li>
-	<li><button type="button" id="shermanBtn">Sherman</button></li>
-	<li><button type="button" id="stingerBtn">Stinger</button></li>
-	<li><button type="button" id="hornetBtn">Hornet</button></li>
-	<div id="p1Output"></div>
-	<button id='create1' type="button">Create Your Bot</button>
-</ul>
-<ul id="player2Select"> Player 2, Select your robot:
-	<li><button type="button" id="terminatorBtn">Terminator</button></li>
-	<li><button type="button" id="zippoBtn">Zippo</button></li>
-	<li><button type="button" id="panzerBtn">Panzer</button></li>
-	<li><button type="button" id="shermanBtn">Sherman</button></li>
-	<li><button type="button" id="stingerBtn">Stinger</button></li>
-	<li><button type="button" id="hornetBtn">Hornet</button></li>
-	<div id="p2Output"></div>
-	<button id='create2' type="button">Create Your Bot</button>
-</ul>
+<div class="dropdown" id="player1Select" style="float:left;">
+  <button class="dropbtn">Player 1</button>
+  <div id="player1Select" class="dropdown-content" style="left:0;">
+		<li><button type="button" id="terminatorBtn">Terminator</button></li>
+		<li><button type="button" id="zippoBtn">Zippo</button></li>
+		<li><button type="button" id="panzerBtn">Panzer</button></li>
+		<li><button type="button" id="shermanBtn">Sherman</button></li>
+		<li><button type="button" id="stingerBtn">Stinger</button></li>
+		<li><button type="button" id="hornetBtn">Hornet</button></li>
+  </div>
 </div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Player2</button>
+  <div id="player2Select" class="dropdown-content">
+		<li><button type="button" id="terminatorBtn">Terminator</button></li>
+		<li><button type="button" id="zippoBtn">Zippo</button></li>
+		<li><button type="button" id="panzerBtn">Panzer</button></li>
+		<li><button type="button" id="shermanBtn">Sherman</button></li>
+		<li><button type="button" id="stingerBtn">Stinger</button></li>
+		<li><button type="button" id="hornetBtn">Hornet</button></li>
+  </div>
+</div>
+
+</div>
+<div class="outputNames">
+	<div id="p1Output"></div>
+	<div id="p2Output"></div>
+</div>
+
 <div id="buttonDiv">
 <div id="battleArena">	</div>
 	<h1>Defeat Your Enemy!</h1>
