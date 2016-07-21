@@ -1,0 +1,166 @@
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+#header{
+	text-align: center;
+}
+#player1 {
+	float:left ;
+}
+
+#player2 {
+	float:right;
+
+}
+
+#players{
+	text-align: center;
+}
+
+
+#attackBtn {
+	background: red;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	min-width: 150px;
+}
+
+#buttonDiv{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  min-height: 200px;
+}
+
+#player1Select, #player2Select {
+	text-align: center;
+
+}
+
+#player1Select{
+	float: left;
+	list-style: none;
+	clear:both;
+}
+
+#player2Select{
+	float: right;
+	list-style: none;
+}
+.outputNames{
+  border: solid black 1px;
+  clear: both;
+  text-align: center;
+}
+#p1Output{
+float:left;
+margin-left: 175px;
+}
+#p2Output{
+float:right;
+margin-right: 175px;
+}
+/*buttons*/
+#terminatorBtn {
+	min-width: 150px;
+	background: lightblue;
+	border-radius: 7px;
+}
+
+#zippoBtn{
+	min-width: 150px;
+	background: chartreuse;
+	border-radius: 7px;
+}
+
+#panzerBtn{
+	min-width: 150px;
+	background: darksalmon;
+	border-radius: 7px;
+}
+
+#shermanBtn{
+	min-width: 150px;
+	background: darkorange;
+	border-radius: 7px;
+}
+
+#stingerBtn{
+	min-width: 150px;
+	background: firebrick;
+	border-radius: 7px;
+}
+
+#hornetBtn{
+	min-width: 150px;
+	background: indigo;
+	border-radius: 7px;
+	color: white;
+}
+
+#battleArena{
+	border: 1px solid black;
+	min-width: 400px;
+	min-height: 200px;
+	display: block;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+#introText1{
+	float:left;
+	padding-left: 17px;
+}
+
+#introText2{
+	float: right;
+	padding-right: 17px;
+}
+
+#fightLog{
+	padding: 5px 5px;
+	border: 1px solid black;
+}
